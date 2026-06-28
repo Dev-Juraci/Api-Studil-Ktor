@@ -21,8 +21,8 @@ fun Application.configureJuraci() {
 
         get<Juraci> { juraci ->
 
-            val testString = juraci.testApp
-            call.respondText("Eu sou $testString")
+            val nameParam = juraci.testApp
+            call.respondText("Eu sou $nameParam")
         }
 
         delete<Juraci.Jesus> {JJ ->
