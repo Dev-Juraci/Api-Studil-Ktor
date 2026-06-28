@@ -29,9 +29,6 @@ fun Application.configureJuraci() {
             call.respondText("Ele é ${JJ.parent.testApp} e nasceu no ano de ${JJ.id}, usuário excluido com sucesso!")
         }
 
-//        delete<Juraci> {
-//            Junior -> call.respondText("Deletado com sucesso: ${Junior.testApp}")
-//        }
 
 
     }
