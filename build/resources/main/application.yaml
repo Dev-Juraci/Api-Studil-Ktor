@@ -1,0 +1,9 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - com.devJura_ktor.Juraci.SettingJuraKt.configureJuraci
+      - com.devJura_ktor.pluing.SerializationKt.configureSerialization
+      - com.devJura_ktor.pluing.ResourcesKt.configureResources
+      - com.devJura_ktor.pluing.RoutingKt.configureRouting
