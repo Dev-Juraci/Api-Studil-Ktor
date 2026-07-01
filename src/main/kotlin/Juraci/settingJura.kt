@@ -66,13 +66,13 @@ fun Application.configureJuraci() {
     }
 }
 
-@Resource("/information")
+@Resource("/informations")
 class InformationResource(
     val information: String? = "Corinthians é campeão da SuperCopa de 2026",
     val datesString: String? = "30/06/2026"
 ) {
 
     @Resource("/dates")
-    data class Dates(val hour: String = "15h45s19", val autor: InformationResource)
+    data class Dates(val hour: String = "15:45:19", val autor: InformationResource)
 
 }
